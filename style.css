@@ -241,6 +241,18 @@ main {
     height: 220px;
     margin-inline: auto;
     object-fit: contain;
+    transition: transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform-origin: center;
+}
+
+.section--types-area img:hover {
+    transform: scale(1.09);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .section--types-area img {
+        transition: none;
+    }
 }
 
 .section--types-area p {
