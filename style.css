@@ -3,13 +3,15 @@ body {
     font-family: "Share Tech Mono", monospace;
     color: aliceblue;
     margin: 0;
-    padding: 30px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 .section--top {
     height: 100vh;
-    position:relative
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 .title--top {
     position:absolute
