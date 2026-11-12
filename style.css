@@ -111,6 +111,17 @@ main {
     line-height: 1.6;
 }
 
+.section--facts-area {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.facts__text {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
 .section--facts-area ol,
 .section--mood-area ul {
     padding-left: 1.5rem;
@@ -118,14 +129,15 @@ main {
 
 .img--bunny-text {
     display: flex;
-    width: min(100%, 500px);
-    margin-inline: auto;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    flex: 0 0 min(32%, 320px);
+    width: min(32%, 320px);
+    margin-left: auto;
+    padding: 0;
 }
 
 .img--bunny-text img {
     display: block;
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -273,6 +285,17 @@ footer {
 
     .section--about {
         align-items: flex-start;
+    }
+
+    .section--facts-area {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .img--bunny-text {
+        flex-basis: 30%;
+        width: 30%;
+        margin-top: 32px;
     }
 
     .listas-alimentacao {
