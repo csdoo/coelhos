@@ -119,7 +119,7 @@ main {
 .img--bunny-text {
     display: flex;
     width: min(100%, 500px);
-    margin-left: auto;
+    margin-inline: auto;
     padding-top: 20px;
     padding-bottom: 40px;
 }
