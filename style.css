@@ -3,26 +3,44 @@ body {
     font-family: "Share Tech Mono", monospace;
     color: aliceblue;
     margin: 0;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .section--top {
     height: 100vh;
+    min-height: 420px;
     position: relative;
     width: 100%;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
+
+/* Canvas ocupa toda a primeira seção, sem espaço de linha ou margem */
+#drawingCanvas {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
 .title--top {
-    position:absolute
+    position: absolute;
+    z-index: 1;
+    margin: 0;
 }
 
 .title--principal {
     font-size: clamp(2rem, 8vw, 4rem);
     top: 0;
+    left: 2vw;
 }
+
 .title--loading {
-    position: absolute;
     font-size: clamp(2rem, 6vw, 4rem);
     right: 20px;
     bottom: 20px;
@@ -37,15 +55,14 @@ body {
     justify-content: center;
 }
 
-.section--about{
-    display:flex
+.section--about {
+    display: flex;
 }
 
 .img--warning {
     max-width: 100%;
     height: auto;
 }
-
 
 .img--bunny-text {
     max-width: 500px;
@@ -62,7 +79,6 @@ body {
     margin: 40px auto;
     padding: 36px;
     box-sizing: border-box;
-
     background: #ffffff;
     color: #ffffff;
 }
@@ -93,14 +109,13 @@ body {
     margin: 0;
 }
 
-.section--types-title{
+.section--types-title {
     font-size: clamp(1rem, 2vw, 1rem);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
-
 }
 
 .img--bunny-text img {
@@ -114,34 +129,10 @@ body {
     justify-content: center;
 }
 
-.section--types-1{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 20px;
-    padding-top: 20px;
+.section--types-1,
+.section--types-2,
+.section--types-3,
+.section--types-4,
+.section--types-5 {
+    padding: 20px 5%;
 }
-.section--types-2{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.section--types-3{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.section--types-4{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.section--types-5{
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
