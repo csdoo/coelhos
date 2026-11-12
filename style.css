@@ -133,13 +133,57 @@ main {
 .section--info-food-area {
     width: min(100%, 900px);
     margin: 40px auto;
-    padding: clamp(24px, 4vw, 36px);
-    background: var(--cinza-alimentacao);
-    color: var(--azul);
+    padding: 4px;
+    background: #c0c0c0;
+    color: #111;
+    border: 2px solid;
+    border-color: #ffffff #404040 #404040 #ffffff;
+    box-shadow: 2px 2px 0 #000000;
 }
 
-.section--info-food-area h2 {
-    margin: 0 0 24px;
+.food-window__titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 38px;
+    padding: 4px 5px 4px 10px;
+    background: #000080;
+    color: #fff;
+}
+
+.food-window__titlebar h2 {
+    margin: 0;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-weight: 400;
+}
+
+.food-window__close {
+    display: grid;
+    place-items: center;
+    flex: 0 0 28px;
+    width: 28px;
+    height: 27px;
+    padding: 0 0 3px;
+    border: 2px solid;
+    border-color: #ffffff #404040 #404040 #ffffff;
+    border-radius: 0;
+    background: #c0c0c0;
+    color: #000;
+    font: bold 23px/1 Arial, sans-serif;
+    cursor: pointer;
+}
+
+.food-window__close:active {
+    border-color: #404040 #ffffff #ffffff #404040;
+    padding: 1px 0 2px 1px;
+}
+
+.food-window__content {
+    padding: clamp(20px, 4vw, 32px);
+}
+
+.section--info-food-area[hidden] {
+    display: none;
 }
 
 .introducao {
