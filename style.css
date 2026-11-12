@@ -57,7 +57,7 @@ body {
     padding-bottom: 40px;
 }
 
-.alimentacao {
+.section--info-food-area {
     width: min(100% - 40px, 900px);
     margin: 40px auto;
     padding: 36px;
