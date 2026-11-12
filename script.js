@@ -1,4 +1,11 @@
 (() => {
+    const foodWindow = document.querySelector("#janela-alimentacao");
+    const closeFoodWindow = document.querySelector(".food-window__close");
+
+    closeFoodWindow?.addEventListener("click", () => {
+        if (foodWindow) foodWindow.hidden = true;
+    });
+
     const hero = document.querySelector(".section--top");
     const canvas = document.querySelector("#drawingCanvas");
     if (!hero || !canvas) return;
