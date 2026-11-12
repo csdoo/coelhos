@@ -28,7 +28,7 @@ body {
 
 .border {
     font-size: clamp(1rem, 3vw, 2rem);
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
