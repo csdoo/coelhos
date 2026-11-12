@@ -7,7 +7,7 @@
     <title>Coelhos</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js?v=2" defer></script>
+    <script src="script.js?v=3" defer></script>
 </head>
 
 <body>
@@ -49,8 +49,12 @@
             <img src="imagem/bunny-text.svg" alt="Coelho desenhado com caracteres especiais" loading="lazy" decoding="async">
         </div>
 
-        <section class="section--info-food-area" aria-labelledby="titulo-alimentacao">
-            <h2 id="titulo-alimentacao">ALIMENTAÇÃO</h2>
+        <section class="section--info-food-area" aria-labelledby="titulo-alimentacao" id="janela-alimentacao">
+            <div class="food-window__titlebar">
+                <h2 id="titulo-alimentacao">ALIMENTAÇÃO</h2>
+                <button class="food-window__close" type="button" aria-label="Fechar janela de alimentação" title="Fechar">×</button>
+            </div>
+            <div class="food-window__content">
 
             <p class="introducao">
                 80% da alimentação deve ser de feno.
@@ -85,6 +89,7 @@
                         <li>biscoitos</li>
                     </ol>
                 </div>
+            </div>
             </div>
         </section>
 
